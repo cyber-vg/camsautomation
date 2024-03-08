@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Member Regression Automation Test Results]" guice-stage="DEVELOPMENT" verbose="4">
+  <parameter name="Portal" value="Member"/>
+  <listeners>
+    <listener class-name="listners.ExtendReportListners"/>
+    <listener class-name="listners.AllureReportListener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Add contribution test on edge(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="memberRegressionTest.memberApplyLoanTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="memberLoanTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- memberRegressionTest.memberApplyLoanTest -->
+    </classes>
+  </test> <!-- Add contribution test on edge(failed) -->
+</suite> <!-- Failed suite [Member Regression Automation Test Results] -->

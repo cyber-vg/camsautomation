@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Rerun Fail test Case ">
+
+<suite-files>
+	<suite-file path="../test-output/testng-failed.xml"></suite-file>
+</suite-files>
+
+	</suite>

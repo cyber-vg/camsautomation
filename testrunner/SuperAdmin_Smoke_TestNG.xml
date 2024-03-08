@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Super Admin  Automation Test Results PW Suite"  thread-count="5"
+	parallel="tests" verbose="4">
+	<parameter name="Portal" value="SuperAdmin" />
+
+<listeners>
+	<listener class-name="listners.ExtendReportListners"></listener>
+	<listener class-name="listners.AllureReportListener"></listener>
+</listeners>
+
+<test name="Super Admin">
+			<parameter name="browser" value="chrome" />
+
+	<classes>
+			<class name="superAdminSmokeTest.SuperAdminTest" />
+		</classes>
+</test>
+
+
+
+</suite>

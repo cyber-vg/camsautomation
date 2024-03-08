@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Member Regression Automation Test Results"  thread-count="5"
+	parallel="tests" verbose="4">
+	<parameter name="Portal" value="Member" />
+
+<listeners>
+	
+	<listener class-name="listners.ExtendReportListners"></listener>
+	<listener class-name="listners.AllureReportListener"></listener>
+</listeners>
+<!--
+	<test name="Add contribution test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="memberRegressionTest.ApplyForContributionTest" />
+		</classes>
+	</test>
+	-->
+	<test name="Add contribution test on edge">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="memberRegressionTest.memberApplyLoanTest" />
+		</classes>
+	</test>
+	
+	
+</suite>

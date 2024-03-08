@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Master Smoke Suite">
+
+<listeners>
+	<listener class-name="listners.ExtendReportListners"></listener>
+	<listener class-name="listners.AllureReportListener"></listener>
+</listeners>
+ 
+ 
+ <suite-files>
+	 <suite-file path="./Admin_Regression_TestNG.xml"></suite-file>
+	 <suite-file path="./Admin_Smoke_TestNG.xml"></suite-file>
+ 	<suite-file path="./Member_Regression_TestNG.xml"></suite-file>
+ 	<suite-file path="./Member_Smoke_TestNG.xml"></suite-file>
+ 	<suite-file path="./SuperAdmin_Regression_TestNG.xml"></suite-file>
+ 	<suite-file path="./SuperAdmin_Smoke_TestNG.xml"></suite-file>
+ 	</suite-files>
+
+</suite>
